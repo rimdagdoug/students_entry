@@ -1,10 +1,10 @@
 import { createAction, props } from "@ngrx/store";
 import { StudentsRecords } from "./students-records";
 
-export const actionList = {
-    callStudentRecordsApi: "[ Students Table Component ] Call students records api",
+export const actionsList = {
+    callStudentsRecordsApi: "[ Students Table Component ] Call students records api",
     callStudentsRecordsApiSuccess: "[ Students Table Component ] Call students record api success"
 };
 
-export const callStudentRecordsApi = createAction(actionList.callStudentRecordsApi);
-export const callStudentsRecordsApiSuccess = createAction(actionList.callStudentsRecordsApiSuccess, props<{payload: StudentsRecords}>)
+export const callStudentsRecordsApi = createAction(actionsList.callStudentsRecordsApi);
+export const callStudentsRecordsApiSuccess = createAction(actionsList.callStudentsRecordsApiSuccess, props<{payload: StudentsRecords}>)
