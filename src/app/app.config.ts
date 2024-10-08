@@ -13,7 +13,7 @@ export const appConfig: ApplicationConfig = {
     provideAnimationsAsync(),
     provideStore(),
     provideState({
-      name: 'studentsRecords',
+      name: 'StudentsRecords',
       reducer: studentsReducer
     }),
     provideStoreDevtools({ maxAge: 25, logOnly: false })
